@@ -1,0 +1,16 @@
+#N canvas 0 100 450 300 10;
+#X obj 96 150 midicc 12 15;
+#X floatatom 96 237 5 0 0 0 - - -;
+#X floatatom 119 217 5 0 0 0 - - -;
+#X floatatom 165 176 5 0 0 0 - - -;
+#X floatatom 142 197 5 0 0 0 - - -;
+#X text 14 83 By Martin Jaroszewicz;
+#X obj 15 15 midicc;
+#X text 179 150 Receives messages from cc 12 \, 13 \, 14 15;
+#X text 13 48 Receives MIDI Control Change Messages - Continuous Control
+(MIDI CC) in a given range on Channel 1;
+#X text 368 268 v. 0.9.1;
+#X connect 0 0 1 0;
+#X connect 0 1 2 0;
+#X connect 0 2 4 0;
+#X connect 0 3 3 0;
